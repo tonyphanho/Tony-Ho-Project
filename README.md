@@ -1,5 +1,7 @@
 ## Automated ELK Stack Deployment
 
+Config by Tony Ho
+
 The files in this repository were used to configure the network depicted below.
 
 ![Redteam](Diagram/Redteam.png)
@@ -22,7 +24,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly [available], in addition to restricting [traffic] to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?[availability]
+- [availability]
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the [Logs] and system [traffic].
 - _TODO: What does Filebeat watch for? [log files and log events]
@@ -47,7 +49,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the [Jump-Box-Provisioner] machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_[73.81.30.82]
+- I added my ip [73.81.30.82]
 
 Machines within the network can only be accessed by [Jump-Box through SSH].
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address? Jump-box 10.0.0.14
@@ -74,7 +76,7 @@ The playbook implements the following tasks:
 - ... [systemctl -w vm.max_map_counts=26144]
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Docker Ps](Diagram/Dockerps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
