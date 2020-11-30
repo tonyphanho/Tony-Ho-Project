@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the [install-elk.yml] file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [install-elk.yml]
+  - ![Elk](Ansible/Elk/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -24,11 +24,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly [available], in addition to restricting [traffic] to the network.
-- [availability]
+- 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the [Logs] and system [traffic].
-- _TODO: What does Filebeat watch for? [log files and log events]
-- _TODO: What does Metricbeat record?
+- What does Filebeat watch for? log files and log events
+- What does Metricbeat record?
 [Filebeat is a lightweight shipper for forwarding and centralizing log data. Installed as an agent on your servers, Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
 
 Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.]
